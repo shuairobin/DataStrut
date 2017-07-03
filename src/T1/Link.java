@@ -16,7 +16,7 @@ public class Link {
         head = new Node();
         head.next = null;
     }
-//新增
+    //新增
     public void addNode(String data){
         /**
          * 1.获取表头
@@ -29,7 +29,7 @@ public class Link {
         }
         p.next = new Node(data);
     }
-//删除节点
+    //删除节点
     public void delNode(String data){
         /**
          * 1.获取表头
@@ -41,7 +41,7 @@ public class Link {
             return;
         }
         while (p.next!=null){
-                if(p.next.name.equals(data)){
+            if(p.next.name.equals(data)){
                 p.next = p.next.next;
                 break;
             }else {
@@ -120,7 +120,7 @@ public class Link {
         link.addNode("主管副总");
         link.addNode("总经理");
         link.display();
-       ArrayList<String> list =  link.printListFromTailToHead();
+        ArrayList<String> list =  link.printListFromTailToHead();
         System.out.println(list.toString());
     }
 }
